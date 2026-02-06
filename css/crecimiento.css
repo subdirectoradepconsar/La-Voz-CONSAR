@@ -1,0 +1,150 @@
+/* ----------------- Paguina de CRECIMIENTO ----------------- */
+.page-crecimiento {
+    background-color: var(--primarioCrecimiento);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+.seccion__crecimiento {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 3rem 0;
+}
+
+.grid__caja--crecimiento {
+
+    border: 0.1rem solid black;
+    /* Borde exterior */
+    box-shadow: inset 0 0 0 0.2rem black;
+    /* Borde interno */
+
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    width: 90%;
+    background-color: var(--blanco);
+    padding: 1rem;
+    border-radius: 1rem;
+    gap: 1rem;
+
+    /* Imagen de fondo en el contenedor */
+    background-image: url(../img/mesa.svg);
+    background-size: cover;
+    /* Hace que cubra todo el contenedor */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que se repita */
+}
+
+@media (min-width: 768px) {
+    .grid__caja--crecimiento {
+
+        border: 0.1rem solid black;
+        /* Borde exterior */
+        box-shadow: inset 0 0 0 0.2rem black;
+        /* Borde interno */
+
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+        width: 90%;
+        background-color: var(--blanco);
+        padding: 1rem;
+        border-radius: 1rem;
+
+        /* Imagen de fondo en el contenedor */
+        background-image: url(../img/mesa.svg);
+        background-size: cover;
+        /* Hace que cubra todo el contenedor */
+        background-position: center;
+        /* Centra la imagen */
+        background-repeat: no-repeat;
+        /* Evita que se repita */
+
+    }
+}
+
+.titulo__crecimiento--img {
+    display: flex;
+    height: 80%;
+    grid-column: 1/4;
+    justify-self: center;
+}
+
+.subtitulo__crecimiento {
+    justify-self: center;
+    font-family: var(--fuenteContenidos);
+    text-align: center;
+    background-color: #FFF200;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0;
+    /* bordes redondeados en esquinas especificas*/
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    /* Agrega el borde solo abajo */
+    border-bottom: 0.3rem solid black;
+}
+
+hr {
+    border: 0.1rem solid black;
+    border: none;
+}
+
+.crecimiento__cuadro--negro {
+    width: 95%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-self: center;
+    grid-column: 4/6;
+    font-family: var(--fuenteContenidos);
+    background-color: var(--negro);
+    color: var(--blanco);
+    text-align: center;
+    border-radius: 1rem;
+    padding: 2rem;
+
+}
+.img_creativo {
+    width: 90%;
+    justify-self: center;
+    
+}
+.titulo__crecimineto--img {
+    width: 70%;
+    display: grid;
+    justify-self: center;
+    grid-column: 1/4;
+}
+
+.crecimiento_txt {
+    justify-self: center;
+    font-size: 1.4rem;
+    font-family: var(--fuenteContenidos);
+    text-align: center;
+    background-color: #FCFC9A;
+    margin: 0;
+    padding: 1rem;
+    /* bordes redondeados en esquinas especificas*/
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.sin_barreras,
+.en_sintonia,
+.dialogo_que_construye {
+    width: 90%;
+    font-size: 1.4rem;
+    border: 0.3rem solid black; /* Borde exterior */
+    border-radius: 1.5rem;
+    position: relative;
+    justify-self: center;
+    align-self: start;
+}

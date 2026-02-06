@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 980 336" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:10;">
+    <path d="M15.94,16.93L973.61,16.93L973.61,318.32L15.94,318.32C10.67,318.32 6.4,314.04 6.4,308.78L6.4,26.47C6.4,21.2 10.68,16.93 15.94,16.93Z" style="fill:white;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:0.5px;"/>
+    <g>
+        <clipPath id="_clip1">
+            <path d="M973.61,28.6L973.61,310.91C973.61,316.175 969.335,320.45 964.07,320.45L15.94,320.45C10.675,320.45 6.4,316.175 6.4,310.91L6.4,28.6C6.4,23.335 10.675,19.06 15.94,19.06L964.07,19.06C969.335,19.06 973.61,23.335 973.61,28.6Z"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <g>
+                <g opacity="0.12">
+                    <path d="M20.39,-45.83L20.39,385.33" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M59.59,-45.83L59.59,385.33" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M98.78,-45.83L98.78,385.33" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M137.98,-45.83L137.98,385.33" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M177.18,-45.83L177.18,385.33" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M216.37,-45.83L216.37,385.33" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M255.57,-45.83L255.57,385.33" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M294.77,-45.83L294.77,385.33" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M333.96,-45.83L333.96,385.33" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M373.16,-45.83L373.16,385.33" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M412.36,-45.83L412.36,385.33" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M451.55,-45.83L451.55,385.33" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M490.75,-45.83L490.75,385.33" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M529.94,-45.83L529.94,385.33" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M569.14,-45.83L569.14,385.33" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M608.34,-45.83L608.34,385.33" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M647.53,-45.83L647.53,385.33" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M686.73,-45.83L686.73,385.33" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M725.93,-45.83L725.93,385.33" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M765.12,-45.83L765.12,385.33" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M804.32,-45.83L804.32,385.33" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M843.52,-45.83L843.52,385.33" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M882.71,-45.83L882.71,385.33" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M921.91,-45.83L921.91,385.33" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M961.11,-45.83L961.11,385.33" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                </g>
+                <g opacity="0.12">
+                    <path d="M1117.89,32.57L-58,32.57" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M1117.89,71.76L-58,71.76" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M1117.89,110.96L-58,110.96" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M1117.89,150.16L-58,150.16" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M1117.89,189.35L-58,189.35" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M1117.89,228.55L-58,228.55" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M1117.89,267.74L-58,267.74" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                    <path d="M1117.89,306.94L-58,306.94" style="fill:none;fill-rule:nonzero;stroke:rgb(29,29,27);stroke-width:1px;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

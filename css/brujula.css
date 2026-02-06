@@ -1,0 +1,94 @@
+/* ----------------- Paguina de BRUJULA ----------------- */
+.page-brujula {
+    background-color: var(--primarioBrujula);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.seccion__brujula {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 3rem 0;
+}
+
+.grid__caja--brujula {
+
+    border: 0.1rem solid black;
+    /* Borde exterior */
+    box-shadow: inset 0 0 0 0.2rem black;
+    /* Borde interno */
+
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    width: 90%;
+    background-color: var(--blanco);
+    padding: 1rem;
+    border-radius: 1rem;
+    gap: 1rem;
+
+    /* Imagen de fondo en el contenedor */
+    background-image: url(../img/mesa.svg);
+    background-size: cover;
+    /* Hace que cubra todo el contenedor */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que se repita */
+}
+
+@media (min-width: 768px) {
+    .grid__caja--brujula {
+
+        border: 0.1rem solid black;
+        /* Borde exterior */
+        box-shadow: inset 0 0 0 0.2rem black;
+        /* Borde interno */
+
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        width: 90%;
+        background-color: var(--blanco);
+        padding: 1rem;
+        border-radius: 1rem;
+
+        /* Imagen de fondo en el contenedor */
+        background-image: url(../img/mesa.svg);
+        background-size: cover;
+        /* Hace que cubra todo el contenedor */
+        background-position: center;
+        /* Centra la imagen */
+        background-repeat: no-repeat;
+        /* Evita que se repita */
+
+    }
+}
+
+.cuadro__rojo {
+    display: flex;
+    width: 65%;
+    justify-self: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+
+/* Agrupamos los elementos y sus estados iniciales */
+.cuadro__rojo,
+.brujula__1,
+.brujula__2,
+.brujula__3 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Agrupamos todos los selectores de hover en una sola regla */
+.cuadro__rojo:hover,
+.brujula__1:hover,
+.brujula__2:hover,
+.brujula__3:hover {
+    transform: scale(1.1);
+}

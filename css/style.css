@@ -1,0 +1,427 @@
+:root {
+    --primario: #c400ff;
+    --primarioAccion: #ef3e3e;
+    --primarioBrujula: #0010ff;
+    --primarioTiempo: #fc00c0;
+    --primarioCrecimiento: #f0d802;
+    --primarioHumor: #e75915;
+    --primarioConexion: #04d334;
+    --blanco: white;
+    --gris: rgb(95, 93, 93);
+    --negro: black;
+    --footer: rgb(106, 108, 108);
+    --azul: rgb(25, 25, 254);
+    --rojo: rgb(219, 102, 102);
+
+    /** Fuentes principales **/
+    --fuentePrimaria: "Montserrat", sans-serif;
+    --fuenteSecundaria: "Birthstone Bounce", cursive;
+    --fuenteContenidos: "Roboto Mono", monospace;
+}
+
+/** Snipet **/
+/** "https://www.paulirish.com/2012/box-sizing-border-box-ftw/" **/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /** 1 rem es 10px **/
+}
+
+/* --------------- GOLBALES --------------- */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/** Globales **/
+body {
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+
+}
+
+h1 {
+    font-size: 8rem;
+    color: var(--negro);
+    font-family: var(--fuenteSecundaria);
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    color: var(--negro);
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/** ---------------- Header  ---------------- **/
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+
+}
+
+@media (min-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+}
+
+.header__logo {
+    width: 30rem;
+    height: auto;
+    margin: 0;
+    display: block;
+}
+
+.header__logo--img {
+    width: 15rem;
+    display: block;
+    margin: 2rem auto;
+}
+
+@media (min-width: 768px) {
+    .header__logo--img {
+        width: 100%;
+        display: block;
+        margin: 2rem;
+    }
+}
+
+/** ---------------- footer ---------------- **/
+
+.footer {
+    background-color: var(--footer);
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        margin-top: auto;
+        position: relative;
+        top: 0;
+        background-color: var(--footer);
+        text-align: center;
+
+    }
+}
+
+.correo {
+    display: flex;
+    /* Pone el botón y el puntero en la misma línea */
+    justify-content: center;
+    /* Centra el grupo horizontalmente */
+    align-items: center;
+    /* Alinea verticalmente el puntero con el botón */
+    gap: 0.8rem;
+    
+}
+
+.icon--sobre {
+    width: 4rem;
+    justify-self: center;
+    padding: 0;
+    
+}
+
+.footer__texto {
+    font-family: var(--fuentePrimaria);
+    font-size: 1.4rem;
+    color: var(--blanco);
+    font-weight: bold;
+    
+}
+
+.footer__texto2 {
+    font-family: var(--fuentePrimaria);
+    font-size: 1.4rem;
+    color: var(--blanco);
+    
+}
+/* ---------------- Navegación ---------------- */
+.navegacion {
+    background-color: var(--blanco);
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+
+}
+
+@media (max-width: 768px) {
+    .navegacion {
+        display: grid;
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+    }
+}
+
+.navegacion__enlace {
+    font-family: var(--fuentePrimaria);
+    color: var(--negro);
+    gap: 2rem;
+    text-transform: uppercase;
+    margin: 0rem auto;
+    /* Quitamos los margenes de los textos para hacerlos compactos*/
+}
+
+.navegacion__enlace--activo,
+.navegacion__enlace:hover {
+    color: var(--primario);
+    font-weight: bold;
+
+}
+.gif {
+    display: flex;
+    width: 4rem;
+    justify-self: center;
+}
+
+.navegacion__enlace--gif {
+    display: inline-flex; /* Mantiene el enlace en línea pero permite alinear hijos */
+    align-items: center;  /* Centra verticalmente el texto y el gif */
+    gap: 5px;            /* <--- AQUÍ controlas la distancia exacta entre texto y GIF */
+    text-decoration: none;
+}
+
+/** Enlaces a redes sociales **/
+
+.iconsLinks {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+    gap: 1rem;
+    padding: 3rem 0 0 0;
+    /** aplicamos solo espacio arriba**/
+}
+
+.icon {
+    width: 3rem;
+}
+
+/* ----------------- Paguina de INICIO ----------------- */
+.seccion__inicio {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 3rem 0;
+}
+
+.grid__caja--inicio {
+
+    border: 0.1rem solid black;
+    /* Borde exterior */
+    box-shadow: inset 0 0 0 0.2rem black;
+    /* Borde interno */
+
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    width: 90%;
+    background-color: var(--blanco);
+    padding: 1rem;
+    border-radius: 1rem;
+    gap: 2rem;
+
+    /* Imagen de fondo en el contenedor */
+    background-image: url(../img/mesa.svg);
+    background-size: cover;
+    /* Hace que cubra todo el contenedor */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que se repita */
+}
+
+@media (min-width: 768px) {
+    .grid__caja--inicio {
+
+        border: 0.1rem solid black;
+        /* Borde exterior */
+        box-shadow: inset 0 0 0 0.2rem black;
+        /* Borde interno */
+
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        width: 90%;
+        background-color: var(--blanco);
+        padding: 1rem;
+        border-radius: 1rem;
+
+        /* Imagen de fondo en el contenedor */
+        background-image: url(../img/mesa.svg);
+        background-size: cover;
+        /* Hace que cubra todo el contenedor */
+        background-position: center;
+        /* Centra la imagen */
+        background-repeat: no-repeat;
+        /* Evita que se repita */
+    }
+}
+
+.puerquito {
+    position: relative;
+    width: 80%;
+    justify-self: center;
+    /* Combinamos las dos animaciones */
+    /* 1. aparecer: dura 0.8s, ocurre una vez */
+    /* 2. flotar: dura 3s, empieza tras 0.8s (delay), es infinita */
+    animation:
+        aparecer 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both,
+        flotar 3s ease-in-out infinite 0.8s;
+}
+
+/* Animación de entrada */
+@keyframes aparecer {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animación de bucle */
+@keyframes flotar {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.mes__img {
+    position: relative;
+    justify-self: center;
+}
+
+.boton__puntero {
+    display: flex;
+    /* Pone el botón y el puntero en la misma línea */
+    justify-content: center;
+    /* Centra el grupo horizontalmente */
+    align-items: center;
+    /* Alinea verticalmente el puntero con el botón */
+    gap: 0rem;
+    /* Espacio opcional entre el botón y el puntero */
+    width: 100%;
+}
+
+.puntero {
+    justify-self: start;
+    position: relative;
+    width: 4rem;
+}
+
+.botonCumpleaños {
+    display: table;
+    align-items: center;
+    width: 15rem;
+}
+
+.botonCumpleaños__boton {
+    /*
+    text-transform: uppercase;
+    padding: 14px 28px;
+    font-size: 18px;
+    font-family: var(--fuentePrimaria);
+    color: #fff;
+    background: linear-gradient(135deg, #c022b5, #ff9671, #d28b27);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(255, 111, 145, 0.45); */
+}
+
+.chocolates {
+    position: relative;
+    width: 70%;
+    justify-self: flex-end;
+    align-self: end;
+    /* ... tus estilos actuales ... */
+    animation: aparecer_chocolates 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes aparecer_chocolates {
+    0% {
+        transform: translateX(50px);
+        /* Viene desde la derecha */
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* --------- Efecto boton cumpleaños -------- */
+.botonCumpleaños__boton {
+    text-transform: uppercase;
+    padding: 14px 28px;
+    font-size: 18px;
+    font-family: var(--fuentePrimaria);
+    color: #fff;
+    /* Fondo inicial */
+    background: #c022b5;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(255, 111, 145, 0.45);
+
+    /* Preparar la transición de tamaño */
+    transition: transform 0.2s ease;
+
+    /* Aplicar la animación de colores infinita */
+    animation: coloresVivos 6s infinite alternate;
+}
+
+/* Efecto de aumento de tamaño al pasar el mouse (15% más grande) */
+.botonCumpleaños__boton:hover {
+    transform: scale(1.15);
+}
+
+/* Animación de los colores del botón */
+@keyframes coloresVivos {
+    0% {
+        background-color: #c022b5;
+        /* Color 1 */
+    }
+
+    50% {
+        background-color: #ff9671;
+        /* Color 2 */
+    }
+
+    100% {
+        background-color: #27d282;
+        /* Color 3 */
+    }
+}

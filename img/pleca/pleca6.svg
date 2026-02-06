@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 972.62 39.02">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #eab200;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-4 {
+        fill: #f0d802;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="-1.97" y="9.15" width="976.56" height="29.87"/>
+    </clipPath>
+  </defs>
+  <rect x="-2.85" width="983.17" height="11.17"/>
+  <g class="cls-3">
+    <rect class="cls-2" x="-1.97" y="-7.22" width="976.56" height="62.61"/>
+    <g>
+      <polygon class="cls-4" points="-8.79 44 -28.95 44 -5.76 4.17 14.41 4.17 -8.79 44"/>
+      <polygon class="cls-4" points="26.47 44 6.3 44 29.5 4.17 49.66 4.17 26.47 44"/>
+      <polygon class="cls-4" points="61.72 44 41.56 44 64.75 4.17 84.92 4.17 61.72 44"/>
+      <polygon class="cls-4" points="96.98 44 76.82 44 100.01 4.17 120.17 4.17 96.98 44"/>
+      <polygon class="cls-4" points="132.23 44 112.07 44 135.27 4.17 155.43 4.17 132.23 44"/>
+      <polygon class="cls-4" points="167.49 44 147.33 44 170.52 4.17 190.69 4.17 167.49 44"/>
+      <polygon class="cls-4" points="202.75 44 182.58 44 205.78 4.17 225.94 4.17 202.75 44"/>
+      <polygon class="cls-4" points="238 44 217.84 44 241.04 4.17 261.2 4.17 238 44"/>
+      <polygon class="cls-4" points="273.26 44 253.1 44 276.29 4.17 296.45 4.17 273.26 44"/>
+      <polygon class="cls-4" points="308.51 44 288.35 44 311.55 4.17 331.71 4.17 308.51 44"/>
+      <polygon class="cls-4" points="343.77 44 323.61 44 346.8 4.17 366.97 4.17 343.77 44"/>
+      <polygon class="cls-4" points="379.03 44 358.86 44 382.06 4.17 402.22 4.17 379.03 44"/>
+      <polygon class="cls-4" points="414.28 44 394.12 44 417.32 4.17 437.48 4.17 414.28 44"/>
+      <polygon class="cls-4" points="449.54 44 429.38 44 452.57 4.17 472.73 4.17 449.54 44"/>
+      <polygon class="cls-4" points="484.8 44 464.63 44 487.83 4.17 507.99 4.17 484.8 44"/>
+      <polygon class="cls-4" points="520.05 44 499.89 44 523.08 4.17 543.25 4.17 520.05 44"/>
+      <polygon class="cls-4" points="555.31 44 535.14 44 558.34 4.17 578.5 4.17 555.31 44"/>
+      <polygon class="cls-4" points="590.56 44 570.4 44 593.6 4.17 613.76 4.17 590.56 44"/>
+      <polygon class="cls-4" points="625.82 44 605.66 44 628.85 4.17 649.02 4.17 625.82 44"/>
+      <polygon class="cls-4" points="661.08 44 640.91 44 664.11 4.17 684.27 4.17 661.08 44"/>
+      <polygon class="cls-4" points="696.33 44 676.17 44 699.36 4.17 719.53 4.17 696.33 44"/>
+      <polygon class="cls-4" points="731.59 44 711.43 44 734.62 4.17 754.78 4.17 731.59 44"/>
+      <polygon class="cls-4" points="766.84 44 746.68 44 769.88 4.17 790.04 4.17 766.84 44"/>
+      <polygon class="cls-4" points="802.1 44 781.94 44 805.13 4.17 825.3 4.17 802.1 44"/>
+      <polygon class="cls-4" points="837.36 44 817.19 44 840.39 4.17 860.55 4.17 837.36 44"/>
+      <polygon class="cls-4" points="872.61 44 852.45 44 875.64 4.17 895.81 4.17 872.61 44"/>
+      <polygon class="cls-4" points="907.87 44 887.71 44 910.9 4.17 931.06 4.17 907.87 44"/>
+      <polygon class="cls-4" points="943.12 44 922.96 44 946.16 4.17 966.32 4.17 943.12 44"/>
+      <polygon class="cls-4" points="978.38 44 958.22 44 981.41 4.17 1001.58 4.17 978.38 44"/>
+    </g>
+  </g>
+  <image width="6000" height="4000" transform="translate(103.27 -52.29) scale(.08)" xlink:href="../../3d-rendering-multi-ethnic-diversity-hands-cover-globe-everyone-save-world-concept.png"/>
+</svg>

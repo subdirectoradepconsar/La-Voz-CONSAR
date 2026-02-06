@@ -1,0 +1,162 @@
+/* ----------------- Paguina de ACCION ----------------- */
+
+.page-accion {
+    background-color: var(--primarioAccion);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.seccion__accion {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 3rem 0;
+}
+
+.grid__caja--accion {
+
+    border: 0.1rem solid black;
+    /* Borde exterior */
+    box-shadow: inset 0 0 0 0.2rem black;
+    /* Borde interno */
+
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    width: 90%;
+    background-color: var(--blanco);
+    padding: 1rem;
+    border-radius: 1rem;
+    gap: 2rem;
+
+    /* Imagen de fondo en el contenedor */
+    background-image: url(../img/mesa.svg);
+    background-size: cover;
+    /* Hace que cubra todo el contenedor */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que se repita */
+}
+
+@media (min-width: 768px) {
+    .grid__caja--inicio {
+
+        border: 0.1rem solid black;
+        /* Borde exterior */
+        box-shadow: inset 0 0 0 0.2rem black;
+        /* Borde interno */
+
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        width: 90%;
+        background-color: var(--blanco);
+        padding: 1rem;
+        border-radius: 1rem;
+
+        /* Imagen de fondo en el contenedor */
+        background-image: url(../img/mesa.svg);
+        background-size: cover;
+        /* Hace que cubra todo el contenedor */
+        background-position: center;
+        /* Centra la imagen */
+        background-repeat: no-repeat;
+        /* Evita que se repita */
+
+    }
+}
+
+.accion__img {
+    width: 85%;
+    display: grid;
+    grid-column: 1 / 5;
+    justify-self: center;
+}
+.seccion__azul {
+    width: 100%;
+    display: grid;
+    background-color: var(--azul);
+    gap: 0rem;
+    border-radius: 2rem;
+    border: 0.3rem solid black;
+}
+
+.cuadro__azul1 {
+    justify-self: flex-start;
+    color: var(--blanco);
+    font-family: var(--fuenteContenidos);
+    padding: 1.2rem;
+}
+
+
+.cuadro__azul2 {
+    justify-self: flex-start;
+    color: var(--blanco);
+    font-family: var(--fuenteContenidos);
+    padding: 1.2rem;
+    grid-column: 2/3;
+}
+
+/*
+.cuadro__azul {
+    width: 100%;
+    justify-self: center;
+    font-family: var(--fuenteContenidos);
+    color: var(--blanco);
+    border-radius: 2rem;
+    border: 0.3rem solid black;
+    
+    border-bottom: 2rem solid black;
+    
+    padding: 1.6rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
+*/
+.negritas {
+    font-weight: bold;
+}
+
+.directivos__img {
+    width: 90%;
+    display: flex;
+    justify-self: center;
+    grid-column: 3/5;
+    /* Combinamos las dos animaciones */
+    /* 1. aparecer: dura 0.8s, ocurre una vez */
+    /* 2. flotar: dura 3s, empieza tras 0.8s (delay), es infinita */
+    animation: 
+        aparecer 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both,
+        flotar 3s ease-in-out infinite 0.8s;
+}
+
+/* Animación de entrada */
+@keyframes aparecer {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animación de bucle */
+@keyframes flotar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.seccion_txt {
+    width: 95%;
+    justify-self: center;
+    display: flex;
+    grid-column: 1/3;
+}

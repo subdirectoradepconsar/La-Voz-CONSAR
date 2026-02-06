@@ -1,0 +1,125 @@
+/* ----------------- Paguina de TIEMPO LIBRE ----------------- */
+.page-tiempo {
+    background-color: var(--primarioTiempo);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.seccion__tiempo_libre {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 3rem 0;
+}
+
+.grid__caja--tiempo_libre {
+
+    border: 0.1rem solid black;
+    /* Borde exterior */
+    box-shadow: inset 0 0 0 0.2rem black;
+    /* Borde interno */
+
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    width: 90%;
+    background-color: var(--blanco);
+    padding: 1rem;
+    border-radius: 1rem;
+    gap: 2rem;
+
+    /* Imagen de fondo en el contenedor */
+    background-image: url(../img/mesa.svg);
+    background-size: cover;
+    /* Hace que cubra todo el contenedor */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que se repita */
+}
+
+@media (min-width: 768px) {
+    .grid__caja--tiempo_libre {
+
+        border: 0.1rem solid black;
+        /* Borde exterior */
+        box-shadow: inset 0 0 0 0.2rem black;
+        /* Borde interno */
+
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        width: 90%;
+        background-color: var(--blanco);
+        padding: 1rem;
+        border-radius: 1rem;
+
+        /* Imagen de fondo en el contenedor */
+        background-image: url(../img/mesa.svg);
+        background-size: cover;
+        /* Hace que cubra todo el contenedor */
+        background-position: center;
+        /* Centra la imagen */
+        background-repeat: no-repeat;
+        /* Evita que se repita */
+
+    }
+}
+
+.titulo__break {
+    display: grid;
+    justify-self: center;
+    grid-column: 1/3;
+
+}
+
+.img__creativa {
+    display: grid;
+    justify-self: center;
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+
+/* Funcion de ventana para el recuadro 1 */
+.recuadro__1 {
+    /* 1. Definimos el tamaño de la "ventana" */
+    height: 400px;           /* Ajusta esta altura a tu gusto */
+    overflow-y: auto;        /* Activa el scroll vertical si el contenido supera el alto */
+    overflow-x: hidden;      /* Evita scroll horizontal innecesario */
+    
+    /* 2. Estilos visuales para que parezca una ventana */
+    padding: 20px;
+    border: 1px solid #ccc;  /* Opcional: un borde para definir la ventana */
+    border: none; /* Quitamos el voder de la ventana*/
+}
+
+
+/* 3. Aseguramos que las imágenes no se desborden horizontalmente */
+.recuadro__1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;     /* Espacio entre las dos imágenes */
+}
+
+/* Funcion de ventana para el recuadro 2 */
+.recuadro__2 {
+    /* 1. Definimos el tamaño de la "ventana" */
+    height: 400px;           /* Ajusta esta altura a tu gusto */
+    overflow-y: auto;        /* Activa el scroll vertical si el contenido supera el alto */
+    overflow-x: hidden;      /* Evita scroll horizontal innecesario */
+    
+    /* 2. Estilos visuales para que parezca una ventana */
+    padding: 20px;
+    border: 1px solid #ccc;  /* Opcional: un borde para definir la ventana */
+    border: none; /* Quitamos el voder de la ventana*/
+}
+
+.recuadro__2 img{
+     display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;     /* Espacio entre las dos imágenes */
+}
