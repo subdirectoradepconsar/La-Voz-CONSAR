@@ -16,17 +16,15 @@
     /* Borde exterior */
     box-shadow: inset 0 0 0 0.2rem black;
     /* Borde interno */
-
     position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
+    align-items: stretch; /* Esto hace que todos midan lo mismo que el más alto */
     width: 90%;
     background-color: var(--blanco);
     padding: 1rem;
     border-radius: 1rem;
     gap: 0rem;
-
     /* Imagen de fondo en el contenedor */
     background-image: url(../img/mesa.svg);
     background-size: cover;
@@ -48,7 +46,7 @@
         position: relative;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        align-items: center;
+        align-items: stretch; /* Esto hace que todos midan lo mismo que el más alto */
         width: 90%;
         background-color: var(--blanco);
         padding: 1rem;
@@ -63,25 +61,41 @@
         /* Centra la imagen */
         background-repeat: no-repeat;
         /* Evita que se repita */
-
+        
     }
 }
 
-.titulo__conexion {
+.titulo_conexion {
     display: flex;
+    align-items: center;    /* Centrado vertical */
+    /* justify-content: center; /* Centrado horizontal (opcional) */
+    width: 100%;
     height: 100%;
-    justify-self: flex-start;
-    grid-column: 1/3;
-    border: none;
+    grid-column: 2/4;
 }
 
-.mascaras__img {
-    width: 95%;
-    justify-self: flex-end;
-    border: none;
-    grid-column: 3/4;
-    grid-row: 2/3;
+.negritas {
+    font-style: normal;
+    font-family: var(--fuenteContenidos);
+    font-weight: bold;
+    font-size: 4rem;
+}
 
+.contenedor_img {
+    width: 80%;
+    height: 80%;
+    display: grid;
+    justify-self: center;
+    transition: transform 0.3s ease;
+}
+.contenedor_img:hover {
+    transform: scale(1.5); /* Aumenta el tamaño un 5% */
+    z-index: 10; /* Asegura que al crecer se vea por encima de otros elementos */
+}
+
+.referencia__img {
+    object-fit: contain; 
+    border-radius: 2rem;
 }
 
 .seccion__informacion {
@@ -97,12 +111,12 @@
     display: flex;
     justify-self: center;
     width: 95%;
-    grid-column: 3/4;
-    grid-row: 1/2;
+    /* grid-column: 3/4;
+    grid-row: 1/2; */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-
 }
+
 .img__rosa:hover{
     transform: scale(1.1);
 }
@@ -112,7 +126,6 @@
     grid-column: 2/3;
     justify-self: center;
     padding: 2rem;
-
 }
 
 .boton--1 {
@@ -126,4 +139,91 @@
     border-radius: 50px;
     cursor: pointer;
     
+}
+.cursiva_conexion {
+    font-family: var(--fuenteSecundaria);
+    /**font-weight: bold;**/
+    font-size: 4.5rem;
+    margin-top: 0;      /* Quita el espacio exterior arriba */
+    margin-bottom: 0;   /* Quita el espacio exterior abajo */
+    padding-top: 0;     /* Quita el espacio interior arriba */
+    padding-bottom: 0;  /* Quita el espacio interior abajo */
+
+}
+
+.relleno1 {
+    width: 98%;
+    height: 100%;
+    border: 0.3rem solid black;
+    border-radius: 2rem;
+
+    /* FONTO INICIAL Crear un fondo del 200% de altura */
+    /* El primer color (azul) es el que se ve al inicio, el segundo (rosa) el que sube */
+    background: linear-gradient(to top, #9b058a 50%, #8c898b 50%);
+    background-size: 100% 200%;
+    background-position: top; /* Empezamos mostrando la parte de arriba (azul) */
+    
+    /* Transición suave de 0.5 segundos */
+    transition: background-position 0.5s ease;
+    
+    /* Estilo de texto para que sea legible */
+    color: white;
+}
+/* EFECTO AL PASAR EL MOUSE */
+.relleno1:hover {
+    /* Movemos el fondo hacia abajo, lo que hace que el color rosa "suba" */
+    background-position: bottom;
+}
+
+.texto_conexion {
+    justify-self: flex-start;
+    color: var(--blanco);
+    font-family: var(--fuenteContenidos);
+    padding: 1.2rem;
+    font-size: 1.7rem;
+}
+
+.cuadro_contanto {
+    place-self: center;
+    flex-direction: column;   /* Apila los elementos verticalmente */
+    justify-content: center;  /* Centra verticalmente */
+    align-items: center;      /* Centra horizontalmente */
+    text-align: center; 
+    width: 85%;
+    padding: 1.3rem;
+}
+.contacto_mensaje {
+    font-family: var(--fuenteContenidos);
+    color: var(--blanco);
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    background-color: rgb(255, 25, 236);
+    padding: 0 2rem;
+}
+.contacto_mensaje--negritas {
+    font-weight: bold;
+}
+
+.correos_ {
+    width: 100%;
+    border-radius: 2rem;
+    background-color: rgb(255, 25, 236);
+    border: 0.3rem solid black;
+    /* 1. Añadimos una transición para que el cambio no sea brusco */
+    transition: transform 0.3s ease;
+}
+.correos_:hover {
+    transform: scale(1.05); /* Aumenta el tamaño un 5% */
+    z-index: 10; /* Asegura que al crecer se vea por encima de otros elementos */
+}
+
+.contacto_correos {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.email1, .email2 {
+    color: var(--blanco);
+    font-family: var(--fuenteContenidos);
 }

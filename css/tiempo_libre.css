@@ -17,7 +17,6 @@
     /* Borde exterior */
     box-shadow: inset 0 0 0 0.2rem black;
     /* Borde interno */
-
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -26,7 +25,7 @@
     background-color: var(--blanco);
     padding: 1rem;
     border-radius: 1rem;
-    gap: 2rem;
+    gap: 0rem;
 
     /* Imagen de fondo en el contenedor */
     background-image: url(../img/mesa.svg);
@@ -48,7 +47,7 @@
 
         position: relative;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         align-items: center;
         width: 90%;
         background-color: var(--blanco);
@@ -67,59 +66,222 @@
     }
 }
 
-.titulo__break {
-    display: grid;
-    justify-self: center;
-    grid-column: 1/3;
-
+.titulo_tiempo {
+    display: flex;
+    justify-self: flex-start;
+    grid-column: 2/5;   
 }
 
-.img__creativa {
-    display: grid;
+.texto__caja--tiempo {
+    display: inline-flex;
+    padding: 0 1rem;
+    font-family: var(--fuentePrimaria);
+    background-color: var(--negro);
+    color: var(--blanco);
+    border-radius: 1rem;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 2.3rem;
+   
     justify-self: center;
-    grid-column: 3/4;
-    grid-row: 1/3;
 }
 
+.referencia_img1 {
+    width: 80%;
+    /* Alineación Horizontal (Eje X) */
+    justify-self: center;
+    /* Alineación Vertical (Eje Y) */
+    align-self: start;
+    border-radius: 2rem;
+    /* 1. Añade la transición para suavizar el movimiento */
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    /* Opcional: Para darle un toque más de 'foto', a veces queda bien un pequeño borde */
+    /* border: 1rem solid white; */
+    /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); */
+}
+/* 2. Aplica la rotación cuando el cursor esté encima (hover) */
+.referencia_img1:hover {
+    /* Rota la imagen 5 grados a la derecha. 
+       Para que gire a la izquierda, usa un valor negativo como -5deg */
+    transform: rotate(5deg);
+    /* Opcional: Añadir una sombra al flotar para más realismo */
+    /* box-shadow: 0 8px 15px rgba(0,0,0,0.2); */
+}
+
+.referencia_img2 {
+    width: 80%;
+    /* Alineación Horizontal (Eje X) */
+    justify-self: center;
+    /* Alineación Vertical (Eje Y) */
+    align-self: center;
+    border-radius: 2rem;
+    /* 1. Añade la transición para suavizar el movimiento */
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    /* Opcional: Para darle un toque más de 'foto', a veces queda bien un pequeño borde */
+    /* border: 1rem solid white; */
+    /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); */
+}
+/* 2. Aplica la rotación cuando el cursor esté encima (hover) */
+.referencia_img2:hover {
+    /* Rota la imagen 5 grados a la derecha. 
+       Para que gire a la izquierda, usa un valor negativo como -5deg */
+    transform: rotate(5deg);
+    /* Opcional: Añadir una sombra al flotar para más realismo */
+    /* box-shadow: 0 8px 15px rgba(0,0,0,0.2); */
+}
+
+.negritas {
+    font-style: normal;
+    font-family: var(--fuenteContenidos);
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.texto_cuadros {
+    width: 100%;
+    display: grid;
+    justify-self: center;
+    background-color: blueviolet;
+    font-family: var(--fuenteContenidos);
+    text-align: center;
+    border-radius: 1rem;
+    border: 0.1rem solid black;
+}
+
+.texto_cuadros_subtitulos {
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    border-radius: 10px;
+    justify-self: center;
+    font-size: 1rem;
+    /* Esto hace que el ancho sea automático al texto */
+    width: fit-content; 
+    /* Para que no se pegue a la derecha si hay otros elementos */
+    margin-left: 0; 
+    
+}
+.titulo_gift {
+    width: 60%;
+    border: 0.1rem solid black;
+    background-color: blue;
+    padding: 0rem;
+    margin-top: 2rem; /* Separacion de la cabecera */
+    display: flex;
+    justify-content: space-between; /* Centra horizontalmente (izquierda a derecha) los elementos */
+    align-items: center;     /* ESTA ES LA CLAVE: Centra verticalmente (arriba a abajo) */
+    gap: 1rem;               /* Separa el texto de la imagen automáticamente */
+    justify-self: center;    /* Centra el DIV entero respecto a su padre grid */
+    border-radius: 2rem;
+    
+}
+.gift {
+   /*  border-radius: 2rem; */
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+}
+
+
+.texto_cuadros_rosa {
+    display: grid;
+    justify-self: center;
+    background-color: rgb(239, 46, 200);
+    font-family: var(--fuenteContenidos);
+    text-align: center;
+    border-radius: 2rem;
+    border: 0.1rem solid black;
+    padding: 2rem;
+}
+
+.texto_cuadros_subtitulos_rosa {
+    font-size: 1rem;
+    border: 0.1rem solid black;
+    background-color: rgb(205, 20, 103);
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    border-radius: 10px;
+    justify-self: center;
+    /* Esto hace que el ancho sea automático al texto */
+    width: fit-content; 
+    /* Para que no se pegue a la derecha si hay otros elementos */
+    margin-left: 0; 
+    
+}
+
+.separacion_cuadro {
+    width: 70%;
+}
+
+.texto_cuadros_titulo {
+    font-size: 1.5rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+    padding: 0 5rem;
+}
+
+.texto_cuadros_contenido {
+    color: var(--blanco);
+    font-size: 1.2rem;
+    padding: 0.3rem 1rem;
+}
+.texto_cuadros_contenido_desliza {
+
+    text-transform: uppercase;
+    color: var(--blanco);
+    font-size: 0.8rem;
+    padding: 0 4rem;
+    
+}
 
 /* Funcion de ventana para el recuadro 1 */
 .recuadro__1 {
     /* 1. Definimos el tamaño de la "ventana" */
-    height: 400px;           /* Ajusta esta altura a tu gusto */
-    overflow-y: auto;        /* Activa el scroll vertical si el contenido supera el alto */
-    overflow-x: hidden;      /* Evita scroll horizontal innecesario */
-    
+    height: 28rem;
+    /* Ajusta esta altura a tu gusto */
+    overflow-y: auto;
+    /* Activa el scroll vertical si el contenido supera el alto */
+    overflow-x: hidden;
+    /* Evita scroll horizontal innecesario */
+
     /* 2. Estilos visuales para que parezca una ventana */
-    padding: 20px;
-    border: 1px solid #ccc;  /* Opcional: un borde para definir la ventana */
-    border: none; /* Quitamos el voder de la ventana*/
-}
-
-
-/* 3. Aseguramos que las imágenes no se desborden horizontalmente */
-.recuadro__1 img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;     /* Espacio entre las dos imágenes */
+    padding: 2%;
+    border: 0.5px solid #ccc;
+    /* Opcional: un borde para definir la ventana */
+    border: none;
+    /* Quitamos el voder de la ventana*/
 }
 
 /* Funcion de ventana para el recuadro 2 */
 .recuadro__2 {
     /* 1. Definimos el tamaño de la "ventana" */
-    height: 400px;           /* Ajusta esta altura a tu gusto */
-    overflow-y: auto;        /* Activa el scroll vertical si el contenido supera el alto */
-    overflow-x: hidden;      /* Evita scroll horizontal innecesario */
-    
+    height: 28rem;
+    /* Ajusta esta altura a tu gusto */
+    overflow-y: auto;
+    /* Activa el scroll vertical si el contenido supera el alto */
+    overflow-x: hidden;
+    /* Evita scroll horizontal innecesario */
+
     /* 2. Estilos visuales para que parezca una ventana */
-    padding: 20px;
-    border: 1px solid #ccc;  /* Opcional: un borde para definir la ventana */
-    border: none; /* Quitamos el voder de la ventana*/
+    padding: 2%;
+    border: 1px solid #ccc;
+    /* Opcional: un borde para definir la ventana */
+    border: none;
+    /* Quitamos el voder de la ventana*/
 }
 
-.recuadro__2 img{
-     display: block;
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;     /* Espacio entre las dos imágenes */
+.cursiva_tiempo {
+    font-family: var(--fuenteSecundaria);
+    /**font-weight: bold;**/
+    font-size: 4rem;
+    margin-top: 0;      /* Quita el espacio exterior arriba */
+    margin-bottom: 0;   /* Quita el espacio exterior abajo */
+    padding-top: 0;     /* Quita el espacio interior arriba */
+    padding-bottom: 0;  /* Quita el espacio interior abajo */
+    justify-self: flex-start;
+    padding: 0 5rem; /* Espacion de extremos al elemento */
 }
+

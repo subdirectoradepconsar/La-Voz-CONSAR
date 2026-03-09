@@ -12,12 +12,10 @@
 }
 
 .grid__caja--brujula {
-
     border: 0.1rem solid black;
     /* Borde exterior */
     box-shadow: inset 0 0 0 0.2rem black;
     /* Borde interno */
-
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -40,20 +38,19 @@
 
 @media (min-width: 768px) {
     .grid__caja--brujula {
-
         border: 0.1rem solid black;
         /* Borde exterior */
         box-shadow: inset 0 0 0 0.2rem black;
         /* Borde interno */
-
         position: relative;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         align-items: center;
         width: 90%;
         background-color: var(--blanco);
         padding: 1rem;
         border-radius: 1rem;
+        gap: 1rem;
 
         /* Imagen de fondo en el contenedor */
         background-image: url(../img/mesa.svg);
@@ -67,14 +64,141 @@
     }
 }
 
-.cuadro__rojo {
+.titulo__brujula {
     display: flex;
-    width: 65%;
-    justify-self: center;
-    grid-column: 2 / 3;
-    grid-row: 1 / 3;
+    align-items: center;    /* Centrado vertical */
+    /* justify-content: center; /* Centrado horizontal (opcional) */
+    font-size: 4rem;
+    font-family: var(--fuenteSecundaria);
+    margin-top: 0;      /* Quita el espacio exterior arriba */
+    margin-bottom: 0;   /* Quita el espacio exterior abajo */
+    padding-top: 0;     /* Quita el espacio interior arriba */
+    padding-bottom: 0;  /* Quita el espacio interior abajo */
+    justify-self: start;
+    grid-column: 2/5;
+    padding: 0 5rem;
+}
+.negritas__brujula {
+    font-style: normal;
+    font-family: var(--fuenteContenidos);
+    font-weight: bold;
+    font-size: 4rem;
+    justify-self: flex-end;
+    margin-top: 0;      /* Quita el espacio exterior arriba */
+    margin-bottom: 0;   /* Quita el espacio exterior abajo */
+    padding-top: 0;     /* Quita el espacio interior arriba */
+    padding-bottom: 0;  /* Quita el espacio interior abajo */
 }
 
+.contenedor_referencia {
+    display: flex;
+    width: 80%;
+    justify-self: center;
+    grid-column: 3/5;
+}
+.referencia_img {
+    display: flex;
+    border-radius: 2rem;
+/* 1. Añade la transición para suavizar el movimiento */
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    /* Opcional: Para darle un toque más de 'foto', a veces queda bien un pequeño borde */
+    /* border: 1rem solid white; */
+    /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); */
+}
+/* 2. Aplica la rotación cuando el cursor esté encima (hover) */
+.referencia_img:hover {
+    /* Rota la imagen 5 grados a la derecha. 
+       Para que gire a la izquierda, usa un valor negativo como -5deg */
+    transform: rotate(5deg);
+    /* Opcional: Añadir una sombra al flotar para más realismo */
+    /* box-shadow: 0 8px 15px rgba(0,0,0,0.2); */
+}
+
+
+.texto__caja--brujula {
+    display: inline-flex;
+    padding: 1rem;
+    font-family: var(--fuentePrimaria);
+    background-color: var(--negro);
+    color: var(--blanco);
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 0;      /* Quita el espacio exterior arriba */
+    margin-bottom: 0;   /* Quita el espacio exterior abajo */
+    padding-top: 0;     /* Quita el espacio interior arriba */
+    padding-bottom: 0;  /* Quita el espacio interior abajo */
+    justify-self: center;
+}
+
+.brujula__txt1, .brujula__txt2 {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    background-color: var(--azul);
+    gap: 0rem;
+    border-radius: 1rem;
+    border: 0.3rem solid black;
+    /* FONTO INICIAL Crear un fondo del 200% de altura */
+    /* El primer color (azul) es el que se ve al inicio, el segundo (rosa) el que sube */
+    background: linear-gradient(to top, #FF19EC 50%, #007bff 50%);
+    background-size: 100% 200%;
+    background-position: top; /* Empezamos mostrando la parte de arriba (azul) */
+    
+    /* Transición suave de 0.5 segundos */
+    transition: background-position 0.5s ease;
+    
+    /* Estilo de texto para que sea legible */
+    color: white;
+}
+/* EFECTO AL PASAR EL MOUSE */
+.brujula__txt1:hover, .brujula__txt2:hover {
+    /* Movemos el fondo hacia abajo, lo que hace que el color rosa "suba" */
+    background-position: bottom;
+}
+
+.brujula__txt2 {
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
+.texto-brujula {
+    justify-self: flex-start;
+    color: var(--blanco);
+    font-family: var(--fuenteContenidos);
+    padding: 1.2rem;
+    font-size: 1.5rem;
+}
+
+.text__accion1 {
+    width: 95%;
+    font-size: 1.7rem;
+    justify-content: flex-start;
+    font-family: var(--fuenteContenidos);
+    background-color: var(--negro);
+    color: var(--blanco);
+    border-radius: 1rem;
+    padding: 2rem;
+    justify-self: center;
+    grid-column: 3/5;
+}
+.text__accion1--titulo {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+.text__accion2 {
+    width: 80%;
+    font-size: 1.7rem;
+    text-align: center;
+    font-family: var(--fuenteContenidos);
+    background-color: var(--negro);
+    color: var(--blanco);
+    border-radius: 1rem;
+    padding: 2rem;
+    justify-self: center;
+}
 
 /* Agrupamos los elementos y sus estados iniciales */
 .cuadro__rojo,
@@ -82,7 +206,7 @@
 .brujula__2,
 .brujula__3 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 /* Agrupamos todos los selectores de hover en una sola regla */

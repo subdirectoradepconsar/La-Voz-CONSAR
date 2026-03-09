@@ -47,7 +47,7 @@
 
         position: relative;
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         align-items: center;
         width: 90%;
         background-color: var(--blanco);
@@ -66,11 +66,46 @@
     }
 }
 
-.titulo__crecimiento--img {
-    display: flex;
-    height: 80%;
-    grid-column: 1/4;
-    justify-self: center;
+.titulo_crecimiento {
+    display: grid;
+    justify-self: flex-start;
+    grid-column: 2/5;
+}
+
+.cursiva__accion {
+    font-size: 4rem;
+    font-family: var(--fuenteSecundaria);
+    margin-top: 0;      /* Quita el espacio exterior arriba */
+    margin-bottom: 0;   /* Quita el espacio exterior abajo */
+    padding-top: 0;     /* Quita el espacio interior arriba */
+    padding-bottom: 0;  /* Quita el espacio interior abajo */
+    justify-self: flex-end;
+    padding: 0 5rem;
+    
+}
+.texto__caja--accion {
+    display: inline-flex;
+    padding: 0 1rem;
+    font-family: var(--fuentePrimaria);
+    background-color: var(--negro);
+    color: var(--blanco);
+    border-radius: 1rem;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-top: 0;      /* Quita el espacio exterior arriba */
+    margin-bottom: 0;   /* Quita el espacio exterior abajo */
+    padding-top: 0;     /* Quita el espacio interior arriba */
+    padding-bottom: 0;  /* Quita el espacio interior abajo */
+    justify-self: flex-start;
+    
+}
+
+.negritas__accion {
+    font-style: normal;
+    font-family: var(--fuenteContenidos);
+    font-weight: bold;
+    font-size: 4rem;
 }
 
 .subtitulo__crecimiento {
@@ -101,25 +136,36 @@ hr {
     font-size: 1.5rem;
     display: flex;
     justify-self: center;
-    grid-column: 4/6;
+    grid-column: 2/5;
     font-family: var(--fuenteContenidos);
     background-color: var(--negro);
     color: var(--blanco);
     text-align: center;
     border-radius: 1rem;
     padding: 2rem;
-
+    /* FONTO INICIAL Crear un fondo del 200% de altura */
+    /* El primer color (azul) es el que se ve al inicio, el segundo (rosa) el que sube */
+    background: linear-gradient(to top, rgb(0, 38, 255) 50%, black 50%);
+    background-size: 100% 200%;
+    background-position: top; /* Empezamos mostrando la parte de arriba (azul) */
+    
+    /* Transición suave de 0.5 segundos */
+    transition: background-position 0.5s ease;
+    
+    /* Estilo de texto para que sea legible */
+    color: white;
 }
+/* EFECTO AL PASAR EL MOUSE */
+.crecimiento__cuadro--negro:hover {
+    /* Movemos el fondo hacia abajo, lo que hace que el color rosa "suba" */
+    background-position: bottom;
+}
+
 .img_creativo {
     width: 90%;
     justify-self: center;
-    
-}
-.titulo__crecimineto--img {
-    width: 70%;
-    display: grid;
-    justify-self: center;
-    grid-column: 1/4;
+    grid-column: 1/2;
+    grid-row: 2/4;
 }
 
 .crecimiento_txt {
@@ -137,9 +183,9 @@ hr {
     border-bottom-right-radius: 1.5rem;
 }
 
-.sin_barreras,
-.en_sintonia,
-.dialogo_que_construye {
+.crecimiento_c1,
+.crecimiento_c2,
+.crecimiento_c3 {
     width: 90%;
     font-size: 1.4rem;
     border: 0.3rem solid black; /* Borde exterior */
@@ -147,4 +193,34 @@ hr {
     position: relative;
     justify-self: center;
     align-self: start;
+
+    /* 1. Añadimos una transición para que el cambio no sea brusco */
+    transition: transform 0.3s ease;
+}
+
+/* 2. Definimos el estado cuando el cursor está encima */
+.crecimiento_c1:hover,
+.crecimiento_c2:hover,
+.crecimiento_c3:hover {
+    transform: scale(1.05); /* Aumenta el tamaño un 5% */
+    z-index: 10; /* Asegura que al crecer se vea por encima de otros elementos */
+}
+
+.referencia_img {
+    border-radius: 2rem; /* Tu código existente */
+    /* 1. Añade la transición para suavizar el movimiento */
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    /* Opcional: Para darle un toque más de 'foto', a veces queda bien un pequeño borde */
+    /* border: 1rem solid white; */
+    /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); */
+}
+
+/* 2. Aplica la rotación cuando el cursor esté encima (hover) */
+.referencia_img:hover {
+    /* Rota la imagen 5 grados a la derecha. 
+       Para que gire a la izquierda, usa un valor negativo como -5deg */
+    transform: rotate(5deg);
+    /* Opcional: Añadir una sombra al flotar para más realismo */
+    /* box-shadow: 0 8px 15px rgba(0,0,0,0.2); */
 }

@@ -3,7 +3,7 @@
     --primarioAccion: #ef3e3e;
     --primarioBrujula: #0010ff;
     --primarioTiempo: #fc00c0;
-    --primarioCrecimiento: #f0d802;
+    --primarioCrecimiento: #ede053;
     --primarioHumor: #e75915;
     --primarioConexion: #04d334;
     --blanco: white;
@@ -15,10 +15,11 @@
 
     /** Fuentes principales **/
     --fuentePrimaria: "Montserrat", sans-serif;
-    --fuenteSecundaria: "Birthstone Bounce", cursive;
+    --fuenteSecundaria: "Audiowide", sans-serif;
+    --fuenteSecundaria2: "Ephesis", cursive;
     --fuenteContenidos: "Roboto Mono", monospace;
-}
 
+}
 /** Snipet **/
 /** "https://www.paulirish.com/2012/box-sizing-border-box-ftw/" **/
 html {
@@ -64,7 +65,6 @@ a {
 img {
     max-width: 100%;
 }
-
 
 /** ---------------- Header  ---------------- **/
 
@@ -137,7 +137,6 @@ img {
     width: 4rem;
     justify-self: center;
     padding: 0;
-    
 }
 
 .footer__texto {
@@ -187,7 +186,6 @@ img {
 .navegacion__enlace:hover {
     color: var(--primario);
     font-weight: bold;
-
 }
 .gif {
     display: flex;
@@ -360,16 +358,16 @@ img {
     box-shadow: 0 8px 20px rgba(255, 111, 145, 0.45); */
 }
 
-.chocolates {
+.imagen_temporada {
     position: relative;
-    width: 70%;
+    width: 40%;
     justify-self: flex-end;
     align-self: end;
     /* ... tus estilos actuales ... */
-    animation: aparecer_chocolates 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: aparecer_imagen_temporada 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-@keyframes aparecer_chocolates {
+@keyframes aparecer_imagen_temporada {
     0% {
         transform: translateX(50px);
         /* Viene desde la derecha */
@@ -424,4 +422,36 @@ img {
         background-color: #27d282;
         /* Color 3 */
     }
+}
+
+.contenedor__mes {
+    display: grid;
+    width: 100%;
+}
+.texto__caja--auto {
+    display: inline-flex;
+    padding: 0 1rem;
+    font-family: var(--fuentePrimaria);
+    text-transform: uppercase;
+    background-color: var(--negro);
+    color: var(--blanco);
+    border-radius: 1rem;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 4rem;
+    margin-top: 0;      /* Quita el espacio exterior arriba */
+    margin-bottom: 0;   /* Quita el espacio exterior abajo */
+    padding-top: 0;     /* Quita el espacio interior arriba */
+    padding-bottom: 0;  /* Quita el espacio interior abajo */
+    justify-self: flex-end;
+}
+.cursiva, .mes{
+    font-family: var(--fuenteSecundaria2);
+    /**font-weight: bold;**/
+    font-size: 12rem;
+    margin-top: 0;      /* Quita el espacio exterior arriba */
+    margin-bottom: 0;   /* Quita el espacio exterior abajo */
+    padding-top: 0;     /* Quita el espacio interior arriba */
+    padding-bottom: 0;  /* Quita el espacio interior abajo */
+    justify-self: center;
 }
