@@ -127,8 +127,13 @@
 }
 
 hr {
-    border: 0.1rem solid black;
-    border: none;
+    /* border: 0.1rem solid black;
+    border: none; */
+    border: 0; /* Quitamos el estilo por defecto del navegador */
+    height: 2px; /* Definimos el grosor de la línea */
+    background-color: black; /* Le damos el color sólido */
+    margin: 0; /* Evitamos que el navegador le ponga espacios arriba/abajo */
+    width: 100%; /* Aseguramos que vaya de lado a lado */
 }
 
 .crecimiento__cuadro--negro {
