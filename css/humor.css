@@ -1,0 +1,176 @@
+/* ----------------- PÁGINA DE HUMOR (BASE MÓVIL) ----------------- */
+
+.page-humor {
+    background-color: var(--primarioHumor);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.seccion__humor {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 3rem 0;
+}
+
+.grid__caja--humor {
+    border: 0.1rem solid black;
+    box-shadow: inset 0 0 0 0.2rem black;
+    position: relative;
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    background-color: var(--blanco);
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    gap: 2rem;
+
+    background-image: url(../img/mesa.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* MEDIA QUERY PARA ESCRITORIO */
+@media (min-width: 768px) {
+    .grid__caja--humor {
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+    }
+}
+
+.titulo {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    justify-self: center;
+}
+
+@media (min-width: 768px) {
+    .titulo {
+        grid-column: 2/5;
+    }
+}
+
+.titulo_principal {
+    font-family: var(--fuenteSecundaria);
+    font-size: 2rem;
+    margin: 0;
+    padding: 0; /* Eliminamos padding excesivo que causaba el desborde */
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .titulo_principal {
+        font-size: 4rem;
+    }
+}
+
+
+.subtitulo {
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+@media (min-width: 768px) {
+    .subtitulo {
+        grid-column: 1/2;
+    }
+}
+
+.negritas {
+    font-style: normal;
+    font-family: var(--fuenteContenidos);
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.contenedor__meme {
+    width: 100%;
+    max-width: 250px; 
+    height: 250px;
+    margin: 0 auto; 
+    border: 0.3rem solid black;
+    border-radius: 1rem;
+    overflow: visible; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; 
+}
+.meme1 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+@media (min-width: 768px) {
+    .meme1 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+}
+.meme2 {
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+
+@media (min-width: 768px) {
+    .meme2 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+}
+
+.meme3 {
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
+@media (min-width: 768px) {
+    .meme3 {
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+}
+
+.meme {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.7rem;
+    transition: transform 0.4s ease, z-index 0s;
+    position: relative;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.contenedor__meme:hover .meme {
+    transform: scale(1.1); 
+    z-index: 999;          
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.texto__caja--humor {
+    grid-column: 1 / -1;
+    display: inline-flex;
+    padding: 0.5rem 1.5rem;
+    font-family: var(--fuentePrimaria);
+    background-color: var(--negro);
+    color: var(--blanco);
+    border-radius: 1rem;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 2rem; /* Ajustado para mejor legibilidad en móvil */
+    margin: 0 auto; 
+}
+
+@media (min-width: 768px) {
+    .texto__caja--humor {
+        font-size: 3rem;
+    }
+}
+
+.boton__puntero {
+    grid-column: 1/3;
+    grid-row: 6/7;
+}
+@media (min-width: 768px) {
+    .boton__puntero {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+}

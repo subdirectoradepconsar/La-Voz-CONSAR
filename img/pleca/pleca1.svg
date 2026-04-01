@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 972.62 39.02">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #04d334;
+      }
+
+      .cls-3 {
+        fill: #188f00;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="-1.17" y="9.15" width="974.95" height="29.87"/>
+    </clipPath>
+  </defs>
+  <rect x="-11.52" y="-.79" width="995.66" height="12.26"/>
+  <g class="cls-4">
+    <rect class="cls-3" x="-1.17" y="9.15" width="974.95" height="29.87"/>
+    <g>
+      <polygon class="cls-2" points="-7.98 44 -28.11 44 -4.95 4.17 15.18 4.17 -7.98 44"/>
+      <polygon class="cls-2" points="27.22 44 7.09 44 30.25 4.17 50.38 4.17 27.22 44"/>
+      <polygon class="cls-2" points="62.42 44 42.29 44 65.45 4.17 85.58 4.17 62.42 44"/>
+      <polygon class="cls-2" points="97.62 44 77.49 44 100.65 4.17 120.78 4.17 97.62 44"/>
+      <polygon class="cls-2" points="132.82 44 112.69 44 135.84 4.17 155.97 4.17 132.82 44"/>
+      <polygon class="cls-2" points="168.01 44 147.88 44 171.04 4.17 191.17 4.17 168.01 44"/>
+      <polygon class="cls-2" points="203.21 44 183.08 44 206.24 4.17 226.37 4.17 203.21 44"/>
+      <polygon class="cls-2" points="238.41 44 218.28 44 241.44 4.17 261.57 4.17 238.41 44"/>
+      <polygon class="cls-2" points="273.61 44 253.48 44 276.64 4.17 296.77 4.17 273.61 44"/>
+      <polygon class="cls-2" points="308.81 44 288.68 44 311.83 4.17 331.96 4.17 308.81 44"/>
+      <polygon class="cls-2" points="344.01 44 323.88 44 347.03 4.17 367.16 4.17 344.01 44"/>
+      <polygon class="cls-2" points="379.2 44 359.07 44 382.23 4.17 402.36 4.17 379.2 44"/>
+      <polygon class="cls-2" points="414.4 44 394.27 44 417.43 4.17 437.56 4.17 414.4 44"/>
+      <polygon class="cls-2" points="449.6 44 429.47 44 452.63 4.17 472.76 4.17 449.6 44"/>
+      <polygon class="cls-2" points="484.8 44 464.67 44 487.83 4.17 507.96 4.17 484.8 44"/>
+      <polygon class="cls-2" points="520 44 499.87 44 523.02 4.17 543.15 4.17 520 44"/>
+      <polygon class="cls-2" points="555.19 44 535.06 44 558.22 4.17 578.35 4.17 555.19 44"/>
+      <polygon class="cls-2" points="590.39 44 570.26 44 593.42 4.17 613.55 4.17 590.39 44"/>
+      <polygon class="cls-2" points="625.59 44 605.46 44 628.62 4.17 648.75 4.17 625.59 44"/>
+      <polygon class="cls-2" points="660.79 44 640.66 44 663.82 4.17 683.95 4.17 660.79 44"/>
+      <polygon class="cls-2" points="695.99 44 675.86 44 699.01 4.17 719.14 4.17 695.99 44"/>
+      <polygon class="cls-2" points="731.18 44 711.06 44 734.21 4.17 754.34 4.17 731.18 44"/>
+      <polygon class="cls-2" points="766.38 44 746.25 44 769.41 4.17 789.54 4.17 766.38 44"/>
+      <polygon class="cls-2" points="801.58 44 781.45 44 804.61 4.17 824.74 4.17 801.58 44"/>
+      <polygon class="cls-2" points="836.78 44 816.65 44 839.81 4.17 859.94 4.17 836.78 44"/>
+      <polygon class="cls-2" points="871.98 44 851.85 44 875 4.17 895.13 4.17 871.98 44"/>
+      <polygon class="cls-2" points="907.18 44 887.05 44 910.2 4.17 930.33 4.17 907.18 44"/>
+      <polygon class="cls-2" points="942.37 44 922.24 44 945.4 4.17 965.53 4.17 942.37 44"/>
+      <polygon class="cls-2" points="977.57 44 957.44 44 980.6 4.17 1000.73 4.17 977.57 44"/>
+    </g>
+  </g>
+</svg>

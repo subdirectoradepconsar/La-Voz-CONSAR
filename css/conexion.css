@@ -1,0 +1,204 @@
+/* ----------------- PÁGINA DE CONEXIÓN (BASE MÓVIL) ----------------- */
+
+.page-conexion {
+    background-color: var(--primarioConexion);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.seccion__conexion {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 3rem 0;
+}
+
+.grid__caja--conexion {
+    border: 0.1rem solid black;
+    box-shadow: inset 0 0 0 0.2rem black;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    background-color: var(--blanco);
+    padding: 1rem;
+    border-radius: 1rem;
+    gap: 1.5rem;
+    background-image: url(../img/mesa.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+    .grid__caja--conexion {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+/* Títulos y textos base */
+.titulo_conexion {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    grid-row: 1/2;
+}
+
+@media (min-width: 768px) {
+    .titulo_conexion {
+        grid-column: 2/4;
+    }
+}
+
+.titulo {
+    font-family: var(--fuenteSecundaria);
+    font-size: 2.8rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .titulo {
+        font-size: 4rem;
+    }
+}
+
+/* Sección de Contacto */
+.cuadro_contanto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 1.3rem;
+}
+@media (min-width: 768px) {
+    .cuadro_contanto {
+        grid-row: 1/2;
+    }
+}
+
+.contacto_mensaje {
+    font-family: var(--fuenteContenidos);
+    color: var(--blanco);
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    background-color: rgb(255, 25, 236);
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.contacto_mensaje--negritas {
+    font-weight: bold;
+}
+
+.correos_ {
+    width: 100%;
+    border-radius: 2rem;
+    background-color: rgb(255, 25, 236);
+    border: 0.3rem solid black;
+    transition: transform 0.3s ease;
+}
+
+.correos_:hover {
+    transform: scale(1.05);
+}
+
+.contacto_correos {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.email1,
+.email2 {
+    color: var(--blanco);
+    font-family: var(--fuenteContenidos);
+    word-break: break-all;
+    font-style: italic;
+}
+
+
+/* VENDEDORES  */
+.bloque_vendedor {
+    background-color: rgb(196, 196, 196);
+    border-radius: 2rem;
+}
+@media (min-width: 768px) {
+    .vendedor1 {
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
+    }
+}
+@media (min-width: 768px) {
+    .vendedor2 {
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .texto_vendedor {
+        grid-column: 1/3;
+    }
+}
+
+
+.titulo_vendedor {
+    font-size: 2rem;
+    padding: 0.6rem;
+    text-align: center;
+    font-family: var(--fuenteContenidos);
+}
+
+.descripcion_vendedor {
+    padding: 2rem;
+    font-size: medium;
+    font-family: var(--fuenteContenidos);
+}
+.img_1 {
+    width: 30rem;
+    border-radius: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Carrusel imgenes productos */
+.carousel-container {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.carousel-track {
+  display: flex;
+  overflow-x: auto;
+  /* El truco mágico: permite que las imágenes "encajen" al hacer scroll */
+  scroll-snap-type: x mandatory; 
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* Suavidad en móviles */
+}
+
+/* Ocultar la barra de scroll para que se vea limpio */
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-slide {
+  flex: 0 0 100%; /* Cada slide ocupa el 100% del ancho del padre */
+  scroll-snap-align: start; /* Alinea el inicio de la imagen al contenedor */
+}
+
+.carousel-slide img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}

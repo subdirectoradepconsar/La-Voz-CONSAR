@@ -1,0 +1,200 @@
+/* ----------------- PÁGINA DE BRÚJULA (BASE MÓVIL) ----------------- */
+
+.page-brujula {
+    background-color: var(--primarioBrujula);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.seccion__brujula {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 3rem 0;
+}
+
+/* Contenedor Padre: Listo para definir grid de móvil */
+.grid__caja--brujula {
+    border: 0.1rem solid black;
+    box-shadow: inset 0 0 0 0.2rem black;
+    position: relative;
+    display: grid; /* Mantengo el display: grid para que puedas empezar */
+    width: 90%;
+    background-color: var(--blanco);
+    padding: 1rem;
+    border-radius: 1rem;
+    gap: 1rem;
+
+    background-image: url(../img/mesa.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+    .grid__caja--brujula {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.titulo__brujula {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    font-family: var(--fuenteSecundaria);
+    margin: 0;
+    padding: 0 5rem;
+    grid-row: 1/2;
+}
+@media (min-width: 768px) {
+    .div_titulo {
+        grid-column: 1/4;
+        justify-self: center;
+    }
+    .div_brujula {
+        grid-column: 1/4;
+        grid-row: 2/3;
+        width: 100%;
+        text-align: center;
+    }
+    .titulo__brujula {
+        padding: 0;
+        font-size: 3rem;
+        align-items: center;
+    }
+}
+/* 000000000000 */
+
+
+.negritas__brujula {
+    font-style: normal;
+    font-family: var(--fuenteContenidos);
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 0;
+}
+
+
+.contenedor_referencia {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+@media (min-width: 768px) {
+    .contenedor_referencia {
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+        justify-self: center; 
+        align-self: center;   
+    }
+}
+
+.referencia_img {
+    display: block;
+    border-radius: 2rem;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    max-width: 100%;
+    height: auto;
+    width: 85%;
+}
+
+@media (min-width: 768px) {
+    .referencia_img {
+        width: 90%;
+    }
+}
+
+.referencia_img:hover {
+    transform: rotate(5deg);
+}
+
+.texto__caja--brujula {
+    padding: 1rem;
+    font-family: var(--fuentePrimaria);
+    background-color: var(--negro);
+    color: var(--blanco);
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0;
+}
+@media (min-width: 768px) {
+    .titulo__brujula {
+        font-size: 4rem;
+        padding: 1rem;
+        text-align: center;
+    }
+    .texto__caja--brujula {
+        font-size: 2.5rem;
+    }
+}
+
+
+.brujula__txt1, .brujula__txt2 {
+    justify-self: center;
+    width: 97%;
+    height: 100%;
+    display: grid;
+    border-radius: 1rem;
+    border: 0.3rem solid black;
+    /* Gradiente y animación intactos */
+    background: linear-gradient(to top, #1215bc 50%, #007bff 50%);
+    background-size: 100% 200%;
+    background-position: top;
+    transition: background-position 0.5s ease;
+    color: white;
+}
+
+.brujula__txt1:hover, .brujula__txt2:hover {
+    background-position: bottom;
+}
+
+.texto-brujula {
+    color: var(--blanco);
+    font-family: var(--fuenteContenidos);
+    padding: 1.2rem;
+    font-size: 1.8rem;
+}
+
+.text__accion1 {
+    width: 95%;
+    font-size: 1.7rem;
+    font-family: var(--fuenteContenidos);
+    background-color: var(--negro);
+    color: var(--blanco);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.text__accion1--titulo {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.text__accion2 {
+    width: 80%;
+    font-size: 1.7rem;
+    text-align: center;
+    font-family: var(--fuenteContenidos);
+    background-color: var(--negro);
+    color: var(--blanco);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+/* --- EFECTOS DE ESCALA --- */
+.cuadro__rojo,
+.brujula__1,
+.brujula__2,
+.brujula__3 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cuadro__rojo:hover,
+.brujula__1:hover,
+.brujula__2:hover,
+.brujula__3:hover {
+    transform: scale(1.1);
+}
