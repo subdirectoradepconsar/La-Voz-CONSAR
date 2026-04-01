@@ -243,3 +243,39 @@
 .p-punto.activo { background-color: #0095f6; }
 
 .icono-guardar { font-size: 1.5rem; }
+
+
+/* Boton que nos lleva al forms */
+.contenedor_boton {
+    display: flex;
+    justify-content: center; /* Centra el botón en la página */
+    width: 100%;
+    padding: 2rem;
+}
+
+.boton_forms {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: fit-content;
+    max-width: 90%;
+    padding: 14px 32px;
+    text-align: center;
+    word-break: break-word;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: var(--fuentePrimaria);
+    color: #fff;
+    background: #c022b5;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(255, 111, 145, 0.45);
+    transition: transform 0.2s ease;
+    animation: coloresVivos 6s infinite alternate;
+}
+
+.boton_forms:hover {
+    transform: scale(1.15);
+}
