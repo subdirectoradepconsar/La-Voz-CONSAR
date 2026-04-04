@@ -167,7 +167,6 @@ img {
     gap: 2rem;
     text-transform: uppercase;
     margin: 0rem auto;
-    /* Quitamos los margenes de los textos para hacerlos compactos*/
 }
 
 .navegacion__enlace--activo,
@@ -184,15 +183,10 @@ img {
 
 .navegacion__enlace--gif {
     display: inline-flex;
-    /* Mantiene el enlace en línea pero permite alinear hijos */
     align-items: center;
-    /* Centra verticalmente el texto y el gif */
     gap: 5px;
-    /* <--- AQUÍ controlas la distancia exacta entre texto y GIF */
     text-decoration: none;
 }
-
-/** Enlaces a redes sociales **/
 
 .iconsLinks {
     display: flex;
@@ -200,7 +194,6 @@ img {
     margin-right: 10%;
     gap: 1rem;
     padding: 3rem 0 0 0;
-    /** aplicamos solo espacio arriba**/
 }
 
 .icon {

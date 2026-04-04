@@ -43,7 +43,8 @@
 
 @media (min-width: 768px) {
     .titulo_crecimiento {
-        grid-column: 2/5;
+        grid-column: 1/5;
+        justify-self: center;
     }
 }
 
@@ -58,22 +59,37 @@
 @media (min-width: 768px) {
     .titulo_principal {
         font-size: 4rem;
-        text-align: start;
+        text-align: center;
     }
 }
 
-.texto__caja--accion {
-    display: inline-flex;
+.texto__caja {
+    justify-self: center;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .texto__caja {
+        grid-column: 1/5;
+    }
+}
+
+.texto__caja--crecimiento {
+    text-align: center;
     padding: 1rem 2rem;
     font-family: var(--fuentePrimaria);
     background-color: var(--negro);
     color: var(--blanco);
     border-radius: 1rem;
-    justify-content: center;
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin: 0;
 }
+@media (min-width: 768px) {
+    .texto__caja--crecimiento {
+        font-size: 2.7rem;
+    }
+}
+
 
 .negritas__accion {
     font-style: normal;
@@ -89,12 +105,16 @@
     background-color: #FFF200;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin: 0;
     padding: 1rem; /* Espaciado interno */
     border-bottom: 0.3rem solid black;
 }
-
+@media (min-width: 768px) {
+    .subtitulo__crecimiento {
+        font-size: 1.3rem;
+    }
+}
 hr {
     border: 0;
     height: 2px;
@@ -121,7 +141,7 @@ hr {
 
 @media (min-width: 768px) {
     .crecimiento__cuadro--negro {
-        grid-column: 2/5;
+        grid-column: 1/5;
     }
 }
 
@@ -136,20 +156,23 @@ hr {
 
 @media (min-width: 768px) {
     .img_creativo {
-        grid-column: 1/2;
-        grid-row: 2/4;
         width: 85%;
     }
 }
 
 /* --- CAMBIO: AJUSTE DE TEXTO INTERNO --- */
 .crecimiento_txt {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-family: var(--fuenteContenidos);
     text-align: center;
     margin: 0;
     padding: 1.5rem; /* Padding uniforme */
     background-color: transparent; /* El fondo ahora lo da el padre */
+}
+@media (min-width: 768px) {
+    .crecimiento_txt {
+        font-size: medium;
+    }
 }
 
 /* --- CAMBIO: AJUSTE DE CONTENEDORES PADRE (Unificación de fondo) --- */

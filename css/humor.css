@@ -46,32 +46,36 @@
 
 @media (min-width: 768px) {
     .titulo {
-        grid-column: 2/5;
+        grid-column: 1/5;
+        justify-content: center;
     }
 }
 
 .titulo_principal {
     font-family: var(--fuenteSecundaria);
-    font-size: 2rem;
+    font-size: 4rem;
     margin: 0;
-    padding: 0; /* Eliminamos padding excesivo que causaba el desborde */
+    padding: 0;
     text-align: center;
 }
 
 @media (min-width: 768px) {
     .titulo_principal {
         font-size: 4rem;
+        text-align: center;
     }
 }
 
 
 .subtitulo {
-    grid-column: 1 / -1;
+    width: 100%;
+    grid-column: 1/3;
     justify-self: center;
 }
 @media (min-width: 768px) {
     .subtitulo {
-        grid-column: 1/2;
+        grid-column: 1/5;
+        grid-row: 2/3;
     }
 }
 
@@ -102,7 +106,7 @@
 @media (min-width: 768px) {
     .meme1 {
         grid-column: 2/3;
-        grid-row: 2/3;
+        grid-row: 3/4;
     }
 }
 .meme2 {
@@ -113,7 +117,7 @@
 @media (min-width: 768px) {
     .meme2 {
         grid-column: 3/4;
-        grid-row: 2/3;
+        grid-row: 3/4;
     }
 }
 
@@ -124,11 +128,11 @@
 @media (min-width: 768px) {
     .meme3 {
         grid-column: 4/5;
-        grid-row: 2/3;
+        grid-row: 3/4;
     }
 }
 
-.meme {
+.meme_img {
     width: 100%;
     height: 100%;
     border-radius: 0.7rem;
@@ -138,23 +142,21 @@
     object-fit: cover;
 }
 
-.contenedor__meme:hover .meme {
+.contenedor__meme:hover .meme_img {
     transform: scale(1.1); 
     z-index: 999;          
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
 .texto__caja--humor {
-    grid-column: 1 / -1;
-    display: inline-flex;
+    text-align: center;
     padding: 0.5rem 1.5rem;
     font-family: var(--fuentePrimaria);
     background-color: var(--negro);
     color: var(--blanco);
     border-radius: 1rem;
-    justify-content: center;
     font-weight: bold;
-    font-size: 2rem; /* Ajustado para mejor legibilidad en móvil */
+    font-size: 2.5rem;
     margin: 0 auto; 
 }
 
@@ -171,6 +173,6 @@
 @media (min-width: 768px) {
     .boton__puntero {
         grid-column: 1/2;
-        grid-row: 2/3;
+        grid-row: 3/4;
     }
 }
