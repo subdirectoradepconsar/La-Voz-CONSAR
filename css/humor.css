@@ -1,5 +1,7 @@
 /* ----------------- PÁGINA DE HUMOR (BASE MÓVIL) ----------------- */
-
+.header {
+    background-color: var(--primarioHumor);
+}
 .page-humor {
     background-color: var(--primarioHumor);
     font-size: 1.6rem;

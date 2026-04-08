@@ -1,4 +1,7 @@
 /* ----------------- PÁGINA DE CRECIMIENTO (BASE MÓVIL) ----------------- */
+.header {
+    background-color: var(--primarioCrecimiento);
+}
 
 .page-crecimiento {
     background-color: var(--primarioCrecimiento);
@@ -125,7 +128,7 @@ hr {
 
 .crecimiento__cuadro--negro {
     width: 95%;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     display: flex;
     font-family: var(--fuenteContenidos);
     text-align: center;

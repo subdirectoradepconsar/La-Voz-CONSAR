@@ -17,8 +17,8 @@
     --fuentePrimaria: "Montserrat", sans-serif;
     --fuenteSecundaria: "Audiowide", sans-serif;
     --fuenteSecundaria2: "Ephesis", cursive;
-    --fuenteContenidos:"Noto Sans", sans-serif; /* "Roboto Mono", monospace; */
-
+    --fuenteContenidos: "Noto Sans", sans-serif;
+    /* "Roboto Mono", monospace; */
 }
 
 /** Snipet **/
@@ -35,7 +35,6 @@ html {
 *:after {
     box-sizing: inherit;
 }
-
 
 /** Globales **/
 body {
@@ -54,12 +53,10 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.8rem;
     color: var(--negro);
-
 }
 
 a {
     text-decoration: none;
-
 }
 
 img {
@@ -69,25 +66,49 @@ img {
 /** ---------------- Header  ---------------- **/
 
 .header {
+    position: sticky;
+    /* Se queda pegado al hacer scroll */
+    top: 0;
+    /* Define dónde se debe pegar (en el borde superior) */
+    z-index: 1000;
+    /* Muy importante para que pase por encima del contenido */
+    background-color: var(--primario);
+    /* Fondo sólido para que no sea transparente */
+
     display: flex;
     justify-content: center;
     padding: 0;
-
 }
 
 @media (min-width: 768px) {
     .header {
+        position: static;
+        width: 100%;
         display: flex;
         justify-content: center;
         padding: 0;
+        flex-direction: column;
+        /* Alinea Logo arriba y Nav abajo */
+        align-items: stretch;
+        /* Centra el logo y el nav horizontalmente */
+        background-color: var(--primario);
     }
 }
 
 .header__logo {
     width: 30rem;
     height: auto;
-    margin: 0;
     display: block;
+}
+
+@media (min-width: 768px) {
+    .header__logo {
+        /* ESTO LO CENTRA HORIZONTALMENTE */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
 }
 
 .header__logo--img {
@@ -108,11 +129,14 @@ img {
 .footer {
     background-color: var(--footer);
     text-align: center;
-    padding: 2rem 1rem; /* Espaciado interno para que respire en el celular */
+    padding: 2rem 1rem;
+    /* Espaciado interno para que respire en el celular */
     margin-top: auto;
     display: flex;
-    flex-direction: column; /* Apila los elementos verticalmente */
-    gap: 1.5rem; /* Espacio entre el correo y los textos */
+    flex-direction: column;
+    /* Apila los elementos verticalmente */
+    gap: 1.5rem;
+    /* Espacio entre el correo y los textos */
     align-items: center;
 }
 
@@ -127,19 +151,17 @@ img {
     width: 4rem;
 }
 
-.footer__texto, 
+.footer__texto,
 .footer__texto2 {
     font-family: var(--fuentePrimaria);
     font-size: 1.4rem;
     color: var(--blanco);
-    margin: 0.5rem 0; 
+    margin: 0.5rem 0;
 }
 
 .footer__texto {
     font-weight: bold;
 }
-
-
 
 /* ---------------- Navegación ---------------- */
 .navegacion {
@@ -147,12 +169,15 @@ img {
     padding: 1rem 0;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    width: 100%;
     gap: 5rem;
-
+    transition: max-height 0.3s ease-in-out;
 }
 
 @media (max-width: 768px) {
     .navegacion {
+        width: 100%;
         display: grid;
         gap: 2rem;
         flex-direction: column;
@@ -200,6 +225,90 @@ img {
     width: 3rem;
 }
 
+/* HAMBURGUEZA */
+/* --- Estilos para el botón (Oculto por defecto en desktop) --- */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: var(--negro);
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* --- Tu navegación base (Desktop) --- */
+.navegacion {
+    background-color: var(--blanco);
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    transition: max-height 0.3s ease-in-out;
+}
+
+/* --- Ajustes para Móvil (768px o menos) --- */
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: var(--primario);
+    }
+
+    .hamburger {
+        display: flex;
+        /* Aparece en móvil */
+    }
+
+    .navegacion {
+        /* display: none; */
+        display: flex;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+
+        /* Se oculta por defecto */
+        flex-direction: column;
+        gap: 2rem;
+        position: absolute;
+        top: 70px;
+        /* Ajusta según el alto de tu header */
+        left: 0;
+        width: 100%;
+        background-color: var(--blanco);
+        padding: 0;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+
+        transition: max-height 0.5s ease-in-out, opacity 0.3s ease, padding 0.5s ease;
+        border-radius: 0 0 2rem 2rem;
+    }
+
+    /* Clase que activaremos con JS */
+    .navegacion--active {
+        opacity: 1;
+        visibility: visible;
+        max-height: 500px;
+        padding: 2rem 0;
+    }
+    /* Redondeado del último enlace para que coincida con el contenedor */
+    .navegacion__enlace:last-child {
+        border-radius: 0 0 2rem 2rem;
+}
+
+/* HAMBURGUEZA FIN */
+
 /* ----------------- Paguina de INICIO ----------------- */
 .seccion__inicio {
     display: flex;
@@ -208,7 +317,6 @@ img {
 }
 
 .grid__caja--inicio {
-
     border: 0.1rem solid black;
     /* Borde exterior */
     box-shadow: inset 0 0 0 0.2rem black;
@@ -236,8 +344,7 @@ img {
 
 @media (min-width: 768px) {
     .grid__caja--inicio {
-    grid-template-columns: repeat(3, 1fr);
-
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -249,6 +356,7 @@ img {
         aparecer 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both,
         flotar 3s ease-in-out infinite 0.8s;
 }
+
 @media (min-width: 768px) {
     .puerquito {
         grid-column: 1/2;
@@ -300,6 +408,7 @@ img {
     grid-column: 1/3;
     grid-row: 3/4;
 }
+
 @media (min-width: 768px) {
     .boton__puntero {
         grid-column: 2/3;
@@ -328,6 +437,7 @@ img {
     /* ... tus estilos actuales ... */
     animation: aparecer_imagen_temporada 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+
 @media (min-width: 768px) {
     .imagen_temporada {
         width: 80%;
@@ -397,6 +507,7 @@ img {
     grid-column: 1/3;
     grid-row: 1/2;
 }
+
 @media (min-width: 768px) {
     .contenedor__mes {
         grid-column: 2/3;

@@ -1,5 +1,7 @@
 /* ------------------ PÁGINA DE CUMPLEAÑOS (LIMPIA) ------------------ */
-
+.header {
+    background-color: var(--primario);
+}
 .seccion__cumpleaños {
     display: flex;
     justify-content: center;
@@ -28,7 +30,7 @@
 /* Títulos y Textos */
 .titulo_cumpleanos {
     font-family: var(--fuenteSecundaria);
-    font-size: 4rem;
+    font-size: 6.5rem;
     /* Bajado un poco para móvil */
     margin: 0;
     padding: 0;
@@ -74,12 +76,13 @@
     text-transform: uppercase;
     color: var(--blanco);
     background-color: var(--negro);
+    font-size: 3rem;
 }
 @media (min-width: 768px) {
     .texto__relleno {
         grid-column: 1/2;
         grid-row: 2/3;
-        font-size: 2rem;
+        font-size: 3rem;
     }
 }
 
@@ -140,13 +143,23 @@
 .cumpleaños__dia {
     background-color: rgb(132, 36, 36);
     color: var(--blanco);
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     margin: 1rem 0 0 0;
+}
+@media (min-width: 768px) {
+    .cumpleaños__dia {
+        font-size: 1.8rem;
+    }
 }
 
 .nombre__persona {
-    font-size: 1.3rem;
+    font-size: 2rem;
     margin: 0.5rem 0;
+}
+@media (min-width: 768px) {
+    .nombre__persona {
+        font-size: 1.5rem;
+    }
 }
 
 .nombre__persona,

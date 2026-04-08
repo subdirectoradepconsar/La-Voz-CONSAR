@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Monsieur+La+Doulaise&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/tiempo_libre.css">
+    <link rel="stylesheet" href="css/a_tiempo_libre.css">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 
 </head>
@@ -34,21 +34,28 @@
         <a class="header__logo" href="index.html">
             <img class="header__logo--img" src="img/logo_la_voz.svg" alt="la_voz">
         </a>
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="navegacion" id="nav-menu">
+            <a class="navegacion__enlace" href="accion.html"><span>acción</span> </a>
+            <a class="navegacion__enlace" href="brujula.html">brújula</a>
+
+            <a class="navegacion__enlace navegacion__enlace--activo navegacion__enlace--gif" href="tiempo_libre.html">
+                <span>tiempo libre</span>
+                <img class="gif" src="img/GIFS/TIEMPO LIBRE.gif" alt="">
+            </a>
+
+            <a class="navegacion__enlace" href="crecimiento.html">crecimiento</a>
+            <a class="navegacion__enlace" href="humor.html"> humor</a>
+            <a class="navegacion__enlace" href="conexion.html">conexión</a>
+        </nav>
     </header>
 
-    <nav class="navegacion">
-        <a class="navegacion__enlace" href="accion.html"><span>acción</span> </a>
-        <a class="navegacion__enlace" href="brujula.html">brújula</a>
 
-        <a class="navegacion__enlace navegacion__enlace--activo navegacion__enlace--gif" href="tiempo_libre.html">
-            <span>tiempo libre</span>
-            <img class="gif" src="img/GIFS/TIEMPO LIBRE.gif" alt="">
-        </a>
-
-        <a class="navegacion__enlace" href="crecimiento.html">crecimiento</a>
-        <a class="navegacion__enlace" href="humor.html"> humor</a>
-        <a class="navegacion__enlace" href="conexion.html">conexión</a>
-    </nav>
 
     <main>
         <section class="iconsLinks">
@@ -155,7 +162,8 @@
                             Si creciste con Tulio Triviño y Juan Carlos Bodoque esta es tu oportunidad. <br><br>
                             Teatro Metropólitan y Auditorio Nacional <br> <br>
                             3 de abril de 2026 - 5 de abril de 2026 <br> <br>
-                            <a target="_blank" href="https://www.ticketmaster.com.mx/31-minutos-boletos/artist/2435971?gad_source=1&gad_campaignid=23695888559&gbraid=0AAAAAoMyxOQ4IRbU6IjYXh6DqQolLxx9W&gclid=Cj0KCQjw4a3OBhCHARIsAChaqJOaDoB_g8f_i_LoEFJ_YDHt3MF4odRCTIWYCT1ooaw1OtPgTtLpNTgaAg4_EALw_wcB">
+                            <a target="_blank"
+                                href="https://www.ticketmaster.com.mx/31-minutos-boletos/artist/2435971?gad_source=1&gad_campaignid=23695888559&gbraid=0AAAAAoMyxOQ4IRbU6IjYXh6DqQolLxx9W&gclid=Cj0KCQjw4a3OBhCHARIsAChaqJOaDoB_g8f_i_LoEFJ_YDHt3MF4odRCTIWYCT1ooaw1OtPgTtLpNTgaAg4_EALw_wcB">
                                 Comprar en Ticketmaster</a>
                         </p>
                         <p class="texto_cuadros_subtitulos_rosa">
@@ -201,6 +209,6 @@
             </a>
         </div>
     </footer>
+    <script src="js/logica.js"></script>
 </body>
-
 </html>

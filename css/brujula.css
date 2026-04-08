@@ -1,5 +1,7 @@
 /* ----------------- PÁGINA DE BRÚJULA (BASE MÓVIL) ----------------- */
-
+.header {
+    background-color: var(--primarioBrujula);
+}
 .page-brujula {
     background-color: var(--primarioBrujula);
     font-size: 1.6rem;

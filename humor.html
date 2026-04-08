@@ -34,21 +34,26 @@
         <a class="header__logo" href="index.html">
             <img class="header__logo--img" src="img/logo_la_voz.svg" alt="la_voz">
         </a>
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="navegacion" id="nav-menu">
+            <a class="navegacion__enlace" href="accion.html">acción</a>
+            <a class="navegacion__enlace" href="brujula.html">brújula</a>
+            <a class="navegacion__enlace" href="tiempo_libre.html">tiempo libre</a>
+            <a class="navegacion__enlace" href="crecimiento.html">crecimiento</a>
+
+            <a class="navegacion__enlace navegacion__enlace--activo navegacion__enlace--gif" href="humor.html">
+                <span>humor</span>
+                <img class="gif" src="img/GIFS/HUMOR.gif" alt="">
+            </a>
+
+            <a class="navegacion__enlace" href="conexion.html">conexión</a>
+        </nav>
     </header>
-
-    <nav class="navegacion">
-        <a class="navegacion__enlace" href="accion.html">acción</a>
-        <a class="navegacion__enlace" href="brujula.html">brújula</a>
-        <a class="navegacion__enlace" href="tiempo_libre.html">tiempo libre</a>
-        <a class="navegacion__enlace" href="crecimiento.html">crecimiento</a>
-
-        <a class="navegacion__enlace navegacion__enlace--activo navegacion__enlace--gif" href="humor.html">
-            <span>humor</span>
-            <img class="gif" src="img/GIFS/HUMOR.gif" alt="">
-        </a>
-
-        <a class="navegacion__enlace" href="conexion.html">conexión</a>
-    </nav>
 
     <main>
         <section class="iconsLinks">
@@ -92,7 +97,8 @@
                 </div>
 
                 <div class="contenedor__meme meme1">
-                    <img class="meme_img" src="img/humor/meme1.webp" alt="meme mi amiga la math girl ignorando su afore">
+                    <img class="meme_img" src="img/humor/meme1.webp"
+                        alt="meme mi amiga la math girl ignorando su afore">
                 </div>
                 <div class="contenedor__meme meme2">
                     <img class="meme_img" src="img/humor/meme2.webp" alt="meme mientras tu descansabas">
@@ -116,6 +122,6 @@
             </a>
         </div>
     </footer>
+    <script src="js/logica.js"></script>
 </body>
-
 </html>

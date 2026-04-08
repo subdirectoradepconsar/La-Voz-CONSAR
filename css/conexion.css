@@ -1,5 +1,7 @@
 /* ----------------- PÁGINA DE CONEXIÓN (BASE MÓVIL) ----------------- */
-
+.header {
+    background-color: var(--primarioConexion);
+}
 .page-conexion {
     background-color: var(--primarioConexion);
     font-size: 1.6rem;
@@ -160,22 +162,21 @@
     font-size: medium;
     font-family: var(--fuenteContenidos);
 }
-.img_1 {
-    width: 30rem;
-    border-radius: 2rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 /* Carrusel imgenes productos */
 .carousel-container {
-  width: 90%;
+  width: 60%;
   max-width: 800px;
   margin: auto;
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+@media (min-width: 768px) {
+    .carousel-container {
+        width: 90%;
+    }
 }
 
 .carousel-track {

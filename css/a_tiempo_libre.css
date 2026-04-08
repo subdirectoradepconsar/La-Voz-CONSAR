@@ -1,5 +1,7 @@
 /* ----------------- PÁGINA DE TIEMPO LIBRE (BASE MÓVIL) ----------------- */
-
+.page-tiempo, .header {
+    background-color: var(--primarioTiempo);
+}
 .page-tiempo {
     background-color: var(--primarioTiempo);
     font-size: 1.6rem;

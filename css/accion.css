@@ -1,5 +1,7 @@
 /* ----------------- PÁGINA DE ACCIÓN (ESTILOS BASE / MÓVIL) ----------------- */
-
+.header {
+    background-color: var(--primarioAccion);
+}
 .page-accion {
     background-color: var(--primarioAccion);
     font-size: 1.6rem;
@@ -250,7 +252,14 @@
     display: flex;
     justify-content: center; /* Centra el botón en la página */
     width: 100%;
+    padding: 5rem;
+}
+@media (min-width: 768px) {
+    .contenedor_boton {
+    width: 100%;
+    height: 70%;
     padding: 2rem;
+    }
 }
 
 .boton_forms {
@@ -276,6 +285,9 @@
     animation: coloresVivos 6s infinite alternate;
 }
 
+
 .boton_forms:hover {
     transform: scale(1.15);
 }
+
+
