@@ -305,6 +305,7 @@ img {
     /* Redondeado del último enlace para que coincida con el contenedor */
     .navegacion__enlace:last-child {
         border-radius: 0 0 2rem 2rem;
+    }
 }
 
 /* HAMBURGUEZA FIN */
