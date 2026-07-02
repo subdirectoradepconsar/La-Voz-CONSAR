@@ -40,9 +40,23 @@
 /* Títulos y textos base */
 .titulo_conexion {
     display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     grid-row: 1/2;
+    gap: 1 rem;
+    align-self: center;
+}
+
+.disclaimer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    grid-row: 1/2;
+    gap: 1.5rem;
+    text-decoration: underline;
 }
 
 @media (min-width: 768px) {

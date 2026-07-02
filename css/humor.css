@@ -175,6 +175,7 @@
 @media (min-width: 768px) {
     .boton__puntero {
         grid-column: 1/2;
-        grid-row: 3/4;
+        grid-row: 4/4;
+
     }
 }
