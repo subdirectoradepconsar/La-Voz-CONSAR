@@ -415,7 +415,7 @@ img {
         grid-column: 2/3;
         grid-row: 2/3;
         position: relative;
-        bottom: 150%;
+        bottom: 250%;
     }
 }
 
