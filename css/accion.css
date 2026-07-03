@@ -88,10 +88,10 @@
 
 
 .accion__txt1, .accion__txt2 {
-    width: 95%;
+    width: 101%;
     height: 95%;
     display: grid;
-    gap: 0rem;
+    gap: 1rem;
     border-radius: 1rem;
     border: 0.3rem solid black;
     /* Efecto de color intacto */
