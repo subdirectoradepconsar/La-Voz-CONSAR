@@ -155,6 +155,12 @@
 .nombre__persona {
     font-size: 1.8rem;
     margin: 0.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.2rem 0.5rem;
+    text-align: center;
+    line-height: 1.2;
 }
 @media (min-width: 768px) {
     .nombre__persona {
